@@ -14,15 +14,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "employees")
-public class Employee extends BaseModel<Integer> {
+@Table(name = "animals")
+public class Animal  extends BaseModel<Integer> {
 
-  private String firstName;
-
-  private String lastName;
-
-  private String emailId;
-
-
+  private String name;
+  private Integer numLegs;
+ 
 }
-

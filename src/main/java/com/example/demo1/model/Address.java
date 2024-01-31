@@ -14,15 +14,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "employees")
-public class Employee extends BaseModel<Integer> {
+@Table(name = "addresses")
+public class Address extends BaseModel<Integer> {
 
-  private String firstName;
+  private String street;
+  private Integer houseNum;
 
-  private String lastName;
-
-  private String emailId;
-
-
+ 
 }
-

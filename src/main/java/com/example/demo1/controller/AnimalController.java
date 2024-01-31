@@ -3,17 +3,17 @@ package com.example.demo1.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo1.base.BaseController;
-import com.example.demo1.model.Employee;
-import com.example.demo1.service.EmployeeService;
+import com.example.demo1.model.Animal;
+import com.example.demo1.service.AnimalService;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping("/employees")
-public class EmployeeController extends BaseController<Employee, Integer>  {
+@RequestMapping("/animals")
+public class AnimalController extends BaseController<Animal, Integer>  {
 
-  public EmployeeController(EmployeeService service) {
+  public AnimalController(AnimalService service) {
     super(service);
   }
 
